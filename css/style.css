@@ -1,0 +1,47 @@
+/* This is the standard css layout*/
+@import url('https://fonts.cdnfonts.com/css/bw-modelica-ss01');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    /*Here insert css variables*/
+    --text-color:rgb(146,44,40);
+}
+header{
+    width: 100%;
+    padding: .8rem 1rem;
+}
+header img{
+    width: 5rem;
+    height: 3.5rem;
+}
+header > div{
+    display: flex;
+    align-items: center;
+}
+header > div i{
+    position: absolute;
+    right: 1rem;
+    font-size: 2.2rem;
+    color: var(--text-color);
+}
+header > div i:last-child{
+    display: none;
+}
+
+@media screen and (min-width: 578px) {
+    
+}
+@media screen and (min-width: 790px) {
+}
+@media screen and (min-width: 1025px) {
+    
+}
+@media screen and (min-width: 1201px) {
+    
+}
