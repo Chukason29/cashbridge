@@ -15,6 +15,7 @@
 header{
     width: 100%;
     padding: .8rem 1rem;
+    box-shadow: 0px 1.5px 10px rgb(200,200,200);
 }
 header img{
     width: 5rem;
@@ -24,16 +25,77 @@ header > div{
     display: flex;
     align-items: center;
 }
-header > div i{
+header label{
     position: absolute;
     right: 1rem;
-    font-size: 2.2rem;
+    top: 1rem;
+    font-size: 2rem;
     color: var(--text-color);
 }
-header > div i:last-child{
+header > label i:last-child{
     display: none;
 }
+#navbar{
+    position: absolute;
+    width:100%;
+}
+#nav-check{
+    display: none;
+}
+#nav-check:checked ~ nav#navbar{
+    transform: scale(1, 1);
+    transition: display 2s;
+}
+#nav-check:checked ~ label > .fa-bars{
+    display:none;
+}
+#nav-check:checked ~ label > .fa-xmark{
+    display: inline-block;
+}
 
+nav a{
+    color:rgb(50,50,50);
+    font-size: 1.08rem;
+    display: inline-block;
+    padding-block: .5rem;
+    text-shadow: 0px 0px .4px rgb(146,44,40);
+}
+nav ul li{
+    margin-block-end: 1rem;
+    border-bottom: .03px solid rgba(146,44,40, .5);
+}
+i.fa-angle-up { display: none;}
+.products:hover > i.fa-angle-down{ display: none; }
+.products:hover > i.fa-angle-up{ display: inline-block; }
+.products:hover > div{ 
+    display: block;
+}
+
+.products > div{
+    padding-inline-start: 0rem;
+    background-color: rgb(200,200,200);
+    color:rgb(146,44,40);
+}
+.products > div a{
+    color:rgb(146,44,40);
+}
+.products > div ul li { 
+    border-bottom: none;
+    margin-block-end: .5rem;
+}
+/*Working on Clicking Products to display child div*/
+nav .products > div{
+    display: none;
+}
+nav .products i{
+    /*float: right;*/
+    position: relative;
+    top: .5rem;
+}
+nav .products i::after{
+    clear: both;
+    content: "";
+}
 @media screen and (min-width: 578px) {
     
 }
