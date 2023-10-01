@@ -18,7 +18,7 @@ header{
     padding: .8rem 1rem;
     box-shadow: 0px 1.5px 10px rgb(200,200,200);
 }
-header img{
+header img, .modal img{
     width: 5rem;
     height: 3.5rem;
 }
@@ -36,17 +36,15 @@ header label{
 header > label i:last-child{
     display: none;
 }
-#navbar{
+/*#navbar{
     position: relative;
     width:100%;
     left: 0%;
-    display: none;
-    padding-inline: .6rem;
-}
+}*/
 #nav-check{
     display: none;
 }
-#nav-check:checked ~ nav#navbar{
+#nav-check:checked ~ #modal-navbar{
     display: block;
 }
 #nav-check:checked ~ label > .fa-bars{
@@ -62,10 +60,14 @@ nav a{
     display: inline-block;
     padding-block: .5rem;
     text-shadow: 0px 0px .4px rgb(146,44,40);
+    text-decoration: none;
 }
 nav ul li{
     margin-block-end: 1rem;
-    border-bottom: .03px solid rgba(146,44,40, .5);
+    /*border-bottom: .03px solid rgba(146,44,40, .5);*/
+}
+#mobile-navbar ul{
+    padding: 0;
 }
 nav i.fa-angle-up { display: none;}
 .products:hover > i.fa-angle-down{ display: none; }
@@ -74,11 +76,11 @@ nav i.fa-angle-up { display: none;}
     display: block;
 }
 nav i{
-    font-size: .7rem;
+    font-size: .6rem;
     margin-inline-end: .75rem;
     color: var(--text-color);
     background-color: rgba(146,44,40,.15);
-    padding: .5rem .55rem;
+    padding: .75rem .75rem;
     border-radius: 45%;
 }
 
@@ -99,15 +101,11 @@ nav .products > div{
     display: none;
 }
 nav .products .fa-angle-down, .products .fa-angle-up{
-    float: right;
-    position: relative;
-    top: .5rem;
-    margin-inline-end: 0rem;
+    background-color: transparent;
+    color: inherit;
+    font-size: .9rem;
 }
-nav .products i::after{
-    clear: both;
-    content: "";
-}
+
 nav .sign-in{
     display: flex;
     align-items: center;
