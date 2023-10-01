@@ -85,20 +85,24 @@ nav i{
 }
 
 .products > div{
-    padding-inline-start: 0.9rem;
-    background-color: rgb(200,200,200);
-    color:rgb(146,44,40);
+    position: relative;
+    left:20%;
 }
 .products > div a{
-    color:rgb(146,44,40);
+    color:rgb(150,150,150);
+    font-family: Inter;
+    text-shadow: none;
+    font-size: .9rem;
+    padding: .2rem;
 }
 .products > div ul li { 
     border-bottom: none;
-    margin-block-end: .2rem;
+    margin-block-end: .02rem;
+    
 }
 /*Working on Clicking Products to display child div*/
 nav .products > div{
-    display: none;
+    
 }
 nav .products .fa-angle-down, .products .fa-angle-up{
     background-color: transparent;
@@ -113,7 +117,7 @@ nav .sign-in{
     margin-block-start: 1rem;
 }
 nav .sign-in a{
-    padding: .8rem 1.5rem;
+    padding: .5rem .9rem;
     border: .8px solid rgb(120,120,120);
     border-radius: 6px;
     color: rgb(240,240,240);
