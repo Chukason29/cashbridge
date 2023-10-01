@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 :root{
@@ -36,15 +37,17 @@ header > label i:last-child{
     display: none;
 }
 #navbar{
-    position: absolute;
+    position: relative;
     width:100%;
+    left: 0%;
+    display: none;
+    padding-inline: .6rem;
 }
 #nav-check{
     display: none;
 }
 #nav-check:checked ~ nav#navbar{
-    transform: scale(1, 1);
-    transition: display 2s;
+    display: block;
 }
 #nav-check:checked ~ label > .fa-bars{
     display:none;
@@ -54,7 +57,7 @@ header > label i:last-child{
 }
 
 nav a{
-    color:rgb(50,50,50);
+    color:rgb(70,70,70);
     font-size: 1.08rem;
     display: inline-block;
     padding-block: .5rem;
@@ -64,15 +67,23 @@ nav ul li{
     margin-block-end: 1rem;
     border-bottom: .03px solid rgba(146,44,40, .5);
 }
-i.fa-angle-up { display: none;}
+nav i.fa-angle-up { display: none;}
 .products:hover > i.fa-angle-down{ display: none; }
 .products:hover > i.fa-angle-up{ display: inline-block; }
 .products:hover > div{ 
     display: block;
 }
+nav i{
+    font-size: .7rem;
+    margin-inline-end: .75rem;
+    color: var(--text-color);
+    background-color: rgba(146,44,40,.15);
+    padding: .5rem .55rem;
+    border-radius: 45%;
+}
 
 .products > div{
-    padding-inline-start: 0rem;
+    padding-inline-start: 0.9rem;
     background-color: rgb(200,200,200);
     color:rgb(146,44,40);
 }
@@ -81,20 +92,56 @@ i.fa-angle-up { display: none;}
 }
 .products > div ul li { 
     border-bottom: none;
-    margin-block-end: .5rem;
+    margin-block-end: .2rem;
 }
 /*Working on Clicking Products to display child div*/
 nav .products > div{
     display: none;
 }
-nav .products i{
-    /*float: right;*/
+nav .products .fa-angle-down, .products .fa-angle-up{
+    float: right;
     position: relative;
     top: .5rem;
+    margin-inline-end: 0rem;
 }
 nav .products i::after{
     clear: both;
     content: "";
+}
+nav .sign-in{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-start: 1rem;
+}
+nav .sign-in a{
+    padding: .8rem 1.5rem;
+    border: .8px solid rgb(120,120,120);
+    border-radius: 6px;
+    color: rgb(240,240,240);
+    background: var(--text-color);
+}
+nav .sign-in i{
+    color: rgb(240,240,240);
+    padding: 0;
+    font-size: 1rem;
+}
+.fa-arrow-right-to-bracket{
+    margin-inline-start: .8rem;
+}
+.fa-file-invoice{
+    margin-inline-end: 1rem;
+}
+.mobile-padding{
+    padding-inline: 1rem;
+}
+.main-section .main-writ h1, .main-writ span{
+    font-family: 'Young Serif', serif;
+    font-size: 2.95rem;
+    color: rgb(30,30,30);
+}
+.main-section .main-writ span{
+    color: var(--text-color);
 }
 @media screen and (min-width: 578px) {
     
