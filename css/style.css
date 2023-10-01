@@ -145,10 +145,39 @@ nav .sign-in i{
 .main-section .main-writ span{
     color: var(--text-color);
 }
+footer{
+    background-color: var(--text-color);
+    padding: 2rem;
+}
+footer > div{
+    margin-block-end: 2rem;
+}
+footer h5{
+    font-weight: 600;
+    margin-block-end: 1rem;
+}
+
+footer h5, footer a, footer p {
+    font-family: Inter;
+    text-decoration: none;
+    color: rgb(240,240,240);
+    font-size: .9rem;
+}
+footer p{line-height: .7rem;}
+#socials i{
+    color: rgb(240,240,240);
+    font-size: 1.2rem;
+    margin-inline-end: .8rem;
+}
 @media screen and (min-width: 578px) {
     
 }
 @media screen and (min-width: 790px) {
+    footer{
+        display: flex;
+        justify-content: space-around;
+        padding-inline: 2.9rem;
+    }
 }
 @media screen and (min-width: 1025px) {
     
