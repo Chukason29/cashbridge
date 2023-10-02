@@ -143,6 +143,39 @@ header > label i:last-child{
 .main-section .main-writ span{
     color: var(--text-color);
 }
+.business-tools{
+    margin-block: 3rem;
+    text-align: center;
+    padding-inline: 1rem;
+}
+.business-tools h1{
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 1.75rem;
+    
+}
+.business-tools > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-block-start: 2rem;
+}
+.business-tools > div > div{
+    width: 45%;
+    border: .2px solid rgb(240,240,240);
+    padding: .8rem;
+    margin-block-end: 1rem;
+    border-radius: 8px;
+}
+.business-tools > div > div p{
+    font-family: Inter;
+    font-size: 1.09rem;
+    margin-block-start: 1.2rem;
+    font-weight: 900;
+}
+.business-tools img{
+    max-width: 100%;
+}
 footer > div{
     background-color: var(--text-color);
     padding: 2rem;
