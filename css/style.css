@@ -99,9 +99,7 @@ header > label i:last-child{
     
 }
 /*Working on Clicking Products to display child div*/
-#mobile-navbar .products > div{
-    
-}
+
 #mobile-navbar .products .fa-angle-down, .products .fa-angle-up{
     background-color: transparent;
     color: inherit;
@@ -176,6 +174,11 @@ header > label i:last-child{
 }
 .business-tools img{
     max-width: 100%;
+}
+.business-tools .coming-soon{
+    font-size: .8rem;
+    background-color: goldenrod;
+    border-radius: 50px;
 }
 footer > div{
     background-color: var(--text-color);
@@ -290,6 +293,28 @@ footer p{
     .main-nav > div:last-child a:hover{
         background-color: rgba(146,44,40, .6);
         color: rgb(240,240,240);
+    }
+    .business-tools > div{
+        justify-content: space-around;
+        margin-block-start: 2rem;
+    }
+    .business-tools{
+        margin-block: 3rem;
+        text-align: center;
+        padding-inline: 7rem;
+    }
+    .business-tools > div > div{
+        width: 24%;
+        border: none;
+        margin-block-end: 1rem;
+        border-radius: 8px;
+    }
+    .business-tools > h1{
+        width: 60%;
+        margin-inline: auto;
+    }
+     div > div p{
+        font-size: 1.25rem;
     }
 }
 @media screen and (min-width: 1100px) {
