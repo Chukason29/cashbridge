@@ -183,29 +183,33 @@ footer p{
     }
     
 }
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 900px) {
     header label{
         display: none;
     }
     .main-nav{
         display: flex;
         justify-content: space-between;
-        padding-inline: 5rem;
+        padding-inline: 1rem;
         align-items: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .main-nav > ul{
         display: flex;
         justify-content: space-evenly;
-        width:40%;
+        width:50%;
         margin: 0;
         padding: 0;
     }
     .main-nav li a{
         color:rgb(70,70,70);
         text-decoration: none;
+        display: flex;
+        align-items: center;
     }
-
+    .main-nav li a:hover{
+        color: var(--text-color)
+    }
     .main-nav-products div{
         position: absolute;
         background-color: #ffffff;
@@ -221,12 +225,78 @@ footer p{
     .main-nav-products:hover > div{
         transform: scale(1, 1);
         transform-origin: bottom;
-        transition: transform .25s ease-in-out;
+        transition: transform .18s ease-in-out;
+    }
+    .main-nav-products:hover  .fa-angle-up{
+        display: inline-block;
+    }
+    .main-nav-products .fa-angle-down{
+        margin-inline-start: .2rem;
+    }
+    .main-nav-products .fa-angle-up{
+        display: none;
+        margin-inline-start: .2rem;
+    }
+    .main-nav-products:hover  .fa-angle-down{
+        display: none;
+    }
+    .main-nav > div:last-child{
+        display: flex;
+        width: 19%;
+        justify-content: space-between;
+    }
+    .main-nav > div:last-child a{
+        text-decoration: none;
+        border: .5px solid var(--text-color);
+        border-radius: 10px;
+        padding: .2rem .3rem;
+        color: var(--text-color);
+        font-size: .9rem;
+    }
+    .main-nav > div:last-child a:hover{
+        background-color: rgba(146,44,40, .6);
+        color: rgb(240,240,240);
     }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1100px) {
     
 }
 @media screen and (min-width: 1201px) {
-    
+    .main-nav{
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 5rem;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+    .main-nav > ul{
+        display: flex;
+        justify-content: space-evenly;
+        width:50%;
+        margin: 0;
+        padding: 0;
+    }
+    .main-nav li a{
+        color:rgb(70,70,70);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+    .main-nav-products div{
+        position: absolute;
+        background-color: #ffffff;
+        width:250px;
+        padding:.5rem;
+        box-shadow: 0px 0px 20px rgba(200,200,200,.6);
+        border-radius: 5px;
+        transform: scale(0,0);
+    }
+    .main-nav > div:last-child a{
+        text-decoration: none;
+        border: .5px solid var(--text-color);
+        border-radius: 10px;
+        padding: .3rem .35rem;
+        color: var(--text-color);
+        font-size: 1.15rem;
+    }
 }
