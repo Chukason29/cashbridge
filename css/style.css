@@ -36,11 +36,9 @@ header label{
 header > label i:last-child{
     display: none;
 }
-/*#navbar{
-    position: relative;
-    width:100%;
-    left: 0%;
-}*/
+.main-nav{
+    display: none;
+}
 #nav-check{
     display: none;
 }
@@ -54,7 +52,7 @@ header > label i:last-child{
     display: inline-block;
 }
 
-nav a{
+#mobile-navbar a{
     color:rgb(70,70,70);
     font-size: 1.08rem;
     display: inline-block;
@@ -62,20 +60,20 @@ nav a{
     text-shadow: 0px 0px .4px rgb(146,44,40);
     text-decoration: none;
 }
-nav ul li{
+#mobile-navbar ul li{
     margin-block-end: 1rem;
     /*border-bottom: .03px solid rgba(146,44,40, .5);*/
 }
 #mobile-navbar ul{
     padding: 0;
 }
-nav i.fa-angle-up { display: none;}
+#mobile-navbar i.fa-angle-up { display: none;}
 .products:hover > i.fa-angle-down{ display: none; }
 .products:hover > i.fa-angle-up{ display: inline-block; }
 .products:hover > div{ 
     display: block;
 }
-nav i{
+#mobile-navbar i{
     font-size: .6rem;
     margin-inline-end: .75rem;
     color: var(--text-color);
@@ -101,29 +99,29 @@ nav i{
     
 }
 /*Working on Clicking Products to display child div*/
-nav .products > div{
+#mobile-navbar .products > div{
     
 }
-nav .products .fa-angle-down, .products .fa-angle-up{
+#mobile-navbar .products .fa-angle-down, .products .fa-angle-up{
     background-color: transparent;
     color: inherit;
     font-size: .9rem;
 }
 
-nav .sign-in{
+#mobile-navbar .sign-in{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-block-start: 1rem;
 }
-nav .sign-in a{
+#mobile-navbar .sign-in a{
     padding: .23rem .1rem;
     border: .8px solid rgb(120,120,120);
     border-radius: 6px;
     color: rgb(240,240,240);
     background: var(--text-color);
 }
-nav .sign-in i{
+#mobile-navbar .sign-in i{
     color: rgb(240,240,240);
     padding: 0;
     font-size: 1rem;
@@ -145,7 +143,7 @@ nav .sign-in i{
 .main-section .main-writ span{
     color: var(--text-color);
 }
-footer{
+footer > div{
     background-color: var(--text-color);
     padding: 2rem;
 }
@@ -163,7 +161,10 @@ footer h5, footer a, footer p {
     color: rgb(240,240,240);
     font-size: .9rem;
 }
-footer p{line-height: .7rem;}
+footer p{
+    line-height: 1.2rem;
+    text-align: justify;
+}
 #socials i{
     color: rgb(240,240,240);
     font-size: 1.2rem;
@@ -173,10 +174,54 @@ footer p{line-height: .7rem;}
     
 }
 @media screen and (min-width: 790px) {
-    footer{
+    footer > div{
         display: flex;
         justify-content: space-around;
-        padding-inline: 2.9rem;
+    }
+    footer > div .footer-mission {
+        max-width: 20%;
+    }
+    
+}
+@media screen and (min-width: 860px) {
+    header label{
+        display: none;
+    }
+    .main-nav{
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 5rem;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+    .main-nav > ul{
+        display: flex;
+        justify-content: space-evenly;
+        width:40%;
+        margin: 0;
+        padding: 0;
+    }
+    .main-nav li a{
+        color:rgb(70,70,70);
+        text-decoration: none;
+    }
+
+    .main-nav-products div{
+        position: absolute;
+        background-color: #ffffff;
+        width:250px;
+        padding:.5rem;
+        box-shadow: 0px 0px 20px rgba(200,200,200,.6);
+        border-radius: 5px;
+        transform: scale(0,0);
+    }
+    .main-nav-products div li{
+        margin-block-end: 1rem;
+    }
+    .main-nav-products:hover > div{
+        transform: scale(1, 1);
+        transform-origin: bottom;
+        transition: transform .25s ease-in-out;
     }
 }
 @media screen and (min-width: 1025px) {
