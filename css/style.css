@@ -169,9 +169,10 @@ header > label i:last-child{
 }
 .business-tools > div > div p{
     font-family: Inter;
-    font-size: 1.09rem;
+    font-size: 1rem;
     margin-block-start: 1.2rem;
     font-weight: 900;
+    text-shadow: 0px 0px .6px rgb(70,70,70);
 }
 .business-tools img{
     max-width: 100%;
