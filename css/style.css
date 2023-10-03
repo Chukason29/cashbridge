@@ -177,10 +177,11 @@ header > label i:last-child{
     align-items: center;
 }
 .license-writ p{
-    font-size: .75rem;
+    font-size: .68rem;
     margin-block: .1rem;
     padding-inline: 1px;
     color: rgb(170,170,170);
+    text-shadow: none;
 }
 .bill_payments h1, .bill_payments p{
     font-size: Inter;
