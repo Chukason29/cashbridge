@@ -261,6 +261,10 @@ header > label i:last-child{
 .blob-phone{
     width:100%;
 }
+.blob-phone p{
+    font-family: Inter;
+    font-size: 1.5rem;
+}
 .qr-code > div{
     background-image: url(../images/phone-blob.svg);
     background-repeat: no-repeat;
@@ -415,6 +419,22 @@ footer p{
      div > div p{
         font-size: 1.25rem;
     }
+    .qr-code{
+        padding: 2rem 3rem;
+        display: flex;
+        align-items: center;
+    }
+    .qr-code hr{
+        margin-block: 2.5rem;
+    }
+    .blob-phone{
+        display: flex;
+        align-items: center;
+    }
+    .blob-phone img{
+        margin-inline-end: 2rem;
+    }
+    
 }
 @media screen and (min-width: 1100px) {
     
