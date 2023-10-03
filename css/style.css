@@ -154,23 +154,23 @@ header > label i:last-child{
     margin-block: 2rem;
 }
 .main-section .main-buttons{
-    display: flex;
-    justify-content: space-between;
-    align-items: self-start;
+
 }
-.main-section .main-buttons a{
-    width: 350px;
+.main-section .main-buttons a, .main-buttons p{
     font-family: Inter;
+    border-radius: 8px;
 }
 .main-section .main-buttons a:first-child{
     background-color: goldenrod;
     color: var(--text-color);
-    padding-block: .75rem;
     text-align: center;
     text-decoration: none;
+    font-size: .9rem;
+    padding: .85rem .5rem;
 }
 .main-section .main-buttons img{
-    max-width: 100%;
+    max-width: 45%;
+    border-radius: 8px;
 }
 .bill_payments h1, .bill_payments p{
     font-size: Inter;
