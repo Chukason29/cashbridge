@@ -12,6 +12,7 @@
 :root{
     /*Here insert css variables*/
     --text-color:rgb(146,44,40);
+    --primary-font-family: Inter;
 }
 header{
     width: 100%;
@@ -145,6 +146,9 @@ header > label i:last-child{
     padding-block: 3rem;
     background: linear-gradient(to bottom, rgb(250,250,250), rgba(230,230,230,.1));
 }
+.main-writ h1{
+    margin-block-end: 1rem;
+}
 .main-section .main-writ h1, .main-writ span{
     font-family: 'Young Serif', serif;
     font-size: 2.95rem;
@@ -157,7 +161,7 @@ header > label i:last-child{
     font-family: Inter;
     color: rgb(90,90,90);
     text-shadow: 0px 0px 1px rgba(90,90,90,.6);
-    margin-block: 2rem;
+    margin-block: 3.5rem;
 }
 .main-section .main-buttons a, .main-buttons p{
     font-family: Inter;
@@ -192,7 +196,6 @@ header > label i:last-child{
     font-weight: 900;
     font-size: 2.6rem
 }
-.bill_payments > p{}
 .business-tools{
     margin-block: 3rem;
     text-align: center;
@@ -231,6 +234,27 @@ header > label i:last-child{
     font-size: .8rem;
     background-color: goldenrod;
     border-radius: 50px;
+}
+.qr-code{
+    padding: 2rem .2rem;
+}
+.qr-code h1{
+    font-family: var(--primary-font-family);
+    font-weight: 500;
+}
+.qr-code a{
+    /*background: linear-gradient(45deg, rgba());*/
+}
+.qr-code img{
+    max-width: 100%;
+}
+.blob-phone{
+    width:100%;
+}
+.qr-code svg{
+    position: relative;
+    top: -20rem;
+    z-index: -1;
 }
 footer > div{
     background-color: var(--text-color);
