@@ -137,7 +137,8 @@ header > label i:last-child{
     padding-inline: 1rem;
 }
 .main-section{
-    margin-block-start: 2rem;
+    padding-block: 3rem;
+    background: linear-gradient(to bottom, rgb(250,250,250), rgba(230,230,230,.1));
 }
 .main-section .main-writ h1, .main-writ span{
     font-family: 'Young Serif', serif;
@@ -153,20 +154,9 @@ header > label i:last-child{
     text-shadow: 0px 0px 1px rgba(90,90,90,.6);
     margin-block: 2rem;
 }
-.main-section .main-buttons{
-
-}
 .main-section .main-buttons a, .main-buttons p{
     font-family: Inter;
     border-radius: 8px;
-}
-.main-section .main-buttons a:first-child{
-    background-color: goldenrod;
-    color: var(--text-color);
-    text-align: center;
-    text-decoration: none;
-    font-size: .9rem;
-    padding: .85rem .5rem;
 }
 .main-section .main-buttons img{
     max-width: 45%;
@@ -183,9 +173,21 @@ header > label i:last-child{
     color: rgb(170,170,170);
     text-shadow: none;
 }
-.bill_payments h1, .bill_payments p{
-    font-size: Inter;
+.main-section img{
+    max-width: 100%;
 }
+.bill_payments{
+    background-color: rgba(146,44,40, .2);
+    margin-block-start: 2rem;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+.bill_payments > h1{ 
+    font-family: Inter;
+    font-weight: 900;
+    font-size: 2.6rem
+}
+.bill_payments > p{}
 .business-tools{
     margin-block: 3rem;
     text-align: center;
