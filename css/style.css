@@ -236,14 +236,24 @@ header > label i:last-child{
     border-radius: 50px;
 }
 .qr-code{
-    padding: 2rem .2rem;
+    padding: 2rem 1.5rem;
 }
 .qr-code h1{
     font-family: var(--primary-font-family);
-    font-weight: 500;
+    font-weight: 700;
 }
 .qr-code a{
-    /*background: linear-gradient(45deg, rgba());*/
+    background: linear-gradient(45deg, rgb(146,44,40,.92), goldenrod);
+    padding: 1.2rem 1rem;
+    color:#ffffff;
+    border-radius:8px;
+    text-decoration: none;
+}
+.qr-code a i{
+    margin-inline-end: .4rem;
+}
+.qr-code h1{
+    margin-block: 2rem;
 }
 .qr-code img{
     max-width: 100%;
@@ -251,10 +261,9 @@ header > label i:last-child{
 .blob-phone{
     width:100%;
 }
-.qr-code svg{
-    position: relative;
-    top: -20rem;
-    z-index: -1;
+.qr-code > div{
+    background-image: url(../images/phone-blob.svg);
+    background-repeat: no-repeat;
 }
 footer > div{
     background-color: var(--text-color);
